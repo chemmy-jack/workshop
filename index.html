@@ -5,16 +5,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>page prac</title>
+    <title>CKMUN2020 official website local</title>
 </head>
 <body>
-    <header> 
-        <ul class="navi">
-            <button>home</button>
-            <button>about us</button>
-            <button>conference</button>
-        </ul>
-    </header>
-    
+    <div class="nav" id="navbar">
+        <a href="#home"><div class="nav-logo">CKMUN2020</div></a>
+        <div class="nav-container">
+            <a href="#about"><div class="nav-item">about</div></a>
+            <a href="#committee"><div class="nav-item">committee</div class="nav-item"></a>
+            <a href="#registration"><div class="nav-item">registration</div class="nav-item"></a>
+            <a href="#sponsership"><div class="nav-item">sponsership</div class="nav-item"></a>
+        </div>    
+    </div>
+    <div class="site-top-blank"><p>  </p></div>
+    <div class=pages>
+        <div class="content home" id="home">
+            <h1>
+                CKMUN2020
+            </h1>
+            <p>
+                this is the home page
+            </p>
+        </div>
+        <div class="content about" id="about">
+            <h1>
+                ABOUT
+            </h1>
+            <p>
+                this is the about page
+            </p>
+        </div>
+        <div class="content committee" id="committee">
+            <h1>
+                COMMITTEE
+            </h1>
+            <p>
+                this is the committee page
+            </p>
+        </div>
+        <div class="content registration" id="registration">
+            <h1>
+                REGISTRATION
+            </h1>
+            <p>
+                this is the registration page
+            </p>
+        </div>
+        <div class="content sponsership" id="sponsership">
+            <h1>
+                SPONSERSHIP
+            </h1>
+            <p>
+                this is the sponsership page
+            </p>
+        </div>
+    </div>
+    <script>
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function() {
+        var currentScrollPos = window.pageYOffset;
+          if (prevScrollpos > currentScrollPos) {
+            document.getElementById("navbar").style.top = "0";
+          } else {
+            document.getElementById("navbar").style.top = "-50px";
+          }
+          prevScrollpos = currentScrollPos;
+        }
+    </script>
+
 </body>
 </html>
