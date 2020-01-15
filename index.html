@@ -5,21 +5,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>CKMUN2020 official website local</title>
+    <title>CKMUN2020 official website testing</title>
 </head>
 <body>
     <div class="nav" id="navbar">
         <a href="#home"><div class="nav-logo">CKMUN2020</div></a>
-        <div class="nav-container">
-            <a href="#about"><div class="nav-item">about</div></a>
-            <a href="#committee"><div class="nav-item">committee</div class="nav-item"></a>
-            <a href="#registration"><div class="nav-item">registration</div class="nav-item"></a>
-            <a href="#sponsership"><div class="nav-item">sponsership</div class="nav-item"></a>
-        </div>    
+        <div class="menu" id="menuid">
+            <div class="menuicon" id="menuiconid" onclick="toggleshowmenufunc()">MENU</div>
+            <div class="nav-container" id="menudropdown">
+                <a href="#about"><div class="nav-item" >about</div></a>
+                <a href="#committee"><div class="nav-item">committee</div class="nav-item"></a>
+                <a href="#registration"><div class="nav-item">registration</div class="nav-item"></a>
+                <a href="#sponsership"><div class="nav-item">sponsership</div class="nav-item"></a>
+            </div>    
+        </div>
+        
     </div>
     <div class="site-top-blank"><p>  </p></div>
     <div class=pages>
-        <div class="content home" id="home">
+        <div class="content" id="home" >
             <h1>
                 CKMUN2020
             </h1>
@@ -27,7 +31,7 @@
                 this is the home page
             </p>
         </div>
-        <div class="content about" id="about">
+        <div class="content" id="about">
             <h1>
                 ABOUT
             </h1>
@@ -35,7 +39,7 @@
                 this is the about page
             </p>
         </div>
-        <div class="content committee" id="committee">
+        <div class="content" id="committee">
             <h1>
                 COMMITTEE
             </h1>
@@ -43,7 +47,7 @@
                 this is the committee page
             </p>
         </div>
-        <div class="content registration" id="registration">
+        <div class="content" id="registration">
             <h1>
                 REGISTRATION
             </h1>
@@ -51,7 +55,7 @@
                 this is the registration page
             </p>
         </div>
-        <div class="content sponsership" id="sponsership">
+        <div class="content" id="sponsership">
             <h1>
                 SPONSERSHIP
             </h1>
@@ -63,14 +67,36 @@
     <script>
         var prevScrollpos = window.pageYOffset;
         window.onscroll = function() {
-        var currentScrollPos = window.pageYOffset;
-          if (prevScrollpos > currentScrollPos) {
-            document.getElementById("navbar").style.top = "0";
-          } else {
-            document.getElementById("navbar").style.top = "-50px";
-          }
-          prevScrollpos = currentScrollPos;
+            var currentScrollPos = window.pageYOffset;
+                if (prevScrollpos > currentScrollPos) {
+                    document.getElementById("navbar").style.top = "0";
+                } 
+                else {
+                    document.getElementById("navbar").style.top = "-50px";
+                }
+            
+            prevScrollpos = currentScrollPos;
         }
+    </script>
+    <script>   
+         /* When the user clicks on the menu div, 
+        toggle between hiding and showing the dropdown content */
+        function toggleshowmenufunc() {
+            document.getElementById("menuid").classList.toggle("showmenu");
+        }
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(event) {
+            if (!event.target.matches('.menuicon')) {
+                var dropdowns = document.getElementsByClassName("menu");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('showmenu')) {
+                        openDropdown.classList.remove('showmenu');
+                    }
+                }
+            }
+        } 
     </script>
 
 </body>
