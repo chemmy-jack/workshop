@@ -149,6 +149,7 @@ p {
     color: white;
     min-height: 100px;
     width: 100%;
+    padding: 5px;
 }
 .foot::selection {
     background-color: white;
@@ -157,6 +158,10 @@ p {
 .footitem {
     margin: 0px;
     padding: 0px;
+    vertical-align: middle;
+}
+.ckicon > img {
+    width: 60px;
 }
 
 @media (max-width:450px) {
