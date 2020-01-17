@@ -121,8 +121,11 @@ Secretary General
                 else {
                     document.getElementById("navbar").style.top = "-50px";
                 }
-            
             prevScrollpos = currentScrollPos;
+            var dropdowns = document.getElementById("menuid");
+                if (dropdowns.classList.contains('showmenu')) {
+                        dropdowns.classList.remove('showmenu');
+                    }
         }
     </script>
     <script>   
@@ -134,14 +137,17 @@ Secretary General
         // Close the dropdown if the user clicks outside of it
         window.onclick = function(event) {
             if (!event.target.matches('.menuicon')) {
-                var dropdowns = document.getElementsByClassName("menu");
-                var i;
+                var dropdowns = document.getElementById("menuid");
+                if (dropdowns.classList.contains('showmenu')) {
+                        dropdowns.classList.remove('showmenu');
+                    }
+/*                var i;
                 for (i = 0; i < dropdowns.length; i++) {
                     var openDropdown = dropdowns[i];
                     if (openDropdown.classList.contains('showmenu')) {
                         openDropdown.classList.remove('showmenu');
                     }
-                }
+                }*/
             }
         } 
     </script>
