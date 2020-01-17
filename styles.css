@@ -123,10 +123,23 @@ a {
     background-color: white;
     color: black;
     min-height: 300px;
-    margin: 0px 10px 0px 10px ;
+    margin: 10px 10px 10px 10px ;
     border-radius: 2px;
     line-break: auto;
 }
+h1 {
+    margin: 0;
+    padding: 0;
+}
+p {
+    margin: 0;
+    padding: 0;
+}
+.text {
+    margin: 5px 10px 5px 10px ;
+    padding: 0;
+}
+
 @media (max-width:450px) {
     .nav-container {
         display: none;
