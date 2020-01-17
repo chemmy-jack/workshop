@@ -159,15 +159,21 @@ p {
     .nav-container {
         position: absolute;
         background-color: #110B29;
-        opacity: 0.85;
+        opacity: 1;
         right: 25px;
-        width: 100px;
-        float: right;
+        width: min-content;
+        align-items: center;
+        border-radius: 4px;
     }
     .nav-item {
+        height: 32px;
         border-bottom-style: solid;
         border-width: 1px;
-        width: fit-content;
+        width: max-content;
+        font-size: 30px;
+    }
+    #nav-sponsership {
+        border-bottom: unset;
     }
     .showmenu .nav-container{
         display:inline-block;
