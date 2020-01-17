@@ -11,6 +11,11 @@ body {
     flex-direction: column;
     margin: 0;
 }
+::selection{
+    background-color: #110B29;
+    color: white;
+}
+
 div {
     display: inline-block;
     white-space: normal;
@@ -138,6 +143,20 @@ p {
 .text {
     margin: 5px 10px 5px 10px ;
     padding: 0;
+}
+.foot {
+    background-color: black;
+    color: white;
+    min-height: 100px;
+    width: 100%;
+}
+.foot::selection {
+    background-color: white;
+    color: black;
+}
+.footitem {
+    margin: 0px;
+    padding: 0px;
 }
 
 @media (max-width:450px) {
