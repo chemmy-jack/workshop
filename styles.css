@@ -158,6 +158,7 @@ p {
 .footitem {
     margin: 0px;
     padding: 0px;
+    color: white;
     vertical-align: middle;
 }
 .ckicon > img {
