@@ -125,33 +125,22 @@ a {
 .content {
     display: block;
     margin: auto;
-    padding: 5px 5px 5px 15px ;
+    padding: 5px 5px 5px 5px ;
     background-color: #110B29;
     color: white;
     min-height: 300px;
     margin: 2px 0px 0px 0px ;
     border-radius: 2px;
     line-break: auto;
+    text-align: center;
 }
 .betweencontent {
-    display: flex;
-    flex-direction: row;
-    min-height: 1px;
-}
-.betweencontentl {
+    background-image: linear-gradient(to right,rgba(255,255,255,0),rgba(255,0,0,1),rgba(255,255,255,0));
     height: 3px;
-    width: 50%;
-    margin: 0;
-    padding: 0;
-    background-image: linear-gradient(to right, #110B29 , white);
+    width: 100%;
+    
 }
-.betweencontentr {
-    height: 3px;
-    width: 50%;
-    margin: 0;
-    padding: 0;
-    background-image: linear-gradient(to left, #110B29 , white);
-}
+
 h1 {
     margin: 0;
     padding: 0;
@@ -164,6 +153,7 @@ p {
     margin: 5px 10px 5px 10px ;
     padding: 0;
 }
+
 .foot {
     background-color: black;
     color: white;
