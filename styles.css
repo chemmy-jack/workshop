@@ -81,7 +81,8 @@ a {
     margin: 1px 1px 1px 1px ;
 }
 .site-top-blank{
-    opacity: 0;
+    background-color: #110B29;
+    opacity: 1;
     height: 45px;
 }
 .homepic {
@@ -92,7 +93,7 @@ a {
 .homepicitem {
     height: 300px;
     width: 100%;
-    background-image: url(/workshop/img/ckmun001-1.png);
+    background-image: url(workshop/img/ckmun001-1.png);
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
@@ -103,34 +104,53 @@ a {
 }
 @media (max-width:925px) {
     .homepicitem {
-        background-image: url(/workshop/img/ckmun001-1.png);
+        background-image: url(workshop/img/ckmun001-1.png);
         background-size: 925px;
     }
 }
 @media (max-width:665px) {
     .homepicitem {
         height: 200px;
-        background-image: url(/workshop/img/ckmun001-1.png);
+        background-image: url(workshop/img/ckmun001-1.png);
         background-size: 665px;
     }
 }
 @media (max-width:430px) {
     .homepicitem {
         height: 160px;
-        background-image: url(/workshop/img/ckmun001-1.png);
+        background-image: url(workshop/img/ckmun001-1.png);
         background-size: 500px;
     }
 }
 .content {
     display: block;
     margin: auto;
-    padding: 0px 5px 5px 5px ;
-    background-color: white;
-    color: black;
+    padding: 5px 5px 5px 15px ;
+    background-color: #110B29;
+    color: white;
     min-height: 300px;
-    margin: 10px 10px 10px 10px ;
+    margin: 2px 0px 0px 0px ;
     border-radius: 2px;
     line-break: auto;
+}
+.betweencontent {
+    display: flex;
+    flex-direction: row;
+    min-height: 1px;
+}
+.betweencontentl {
+    height: 3px;
+    width: 50%;
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(to right, #110B29 , white);
+}
+.betweencontentr {
+    height: 3px;
+    width: 50%;
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(to left, #110B29 , white);
 }
 h1 {
     margin: 0;
