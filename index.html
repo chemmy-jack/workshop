@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./css/styles.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -13,7 +13,7 @@
         <div class="menu" id="menuid">
             <div class="menuicon" id="menuiconid" onclick="toggleshowmenufunc()">MENU</div>
             <div class="nav-container" id="menudropdown">
-                <a href="#about"><div class="nav-item" id="nav-about">About</div></a>
+                <a href="#about"><div class="nav-item" id="nav-about" onclick="">About</div></a>
                 <a href="#committee"><div class="nav-item" id="nav-committee">Committee</div></a>
                 <a href="#registration"><div class="nav-item" id="nav-registration">Registration</div></a>
                 <a href="#sponsership"><div class="nav-item" id="nav-sponsership">Sponsership</div></a>
@@ -158,6 +158,7 @@ How was your first MUN experience? Did you tremble with excitement while address
         <div class="footitem ckicon"><img src="img/ckicon-1.png"></div>
         <div class="footitem ckadress">No.56, Nanhai Rd. Zhongzheng Dist. <br>Taipei City, 10066 <br>Taiwan (R.O.C.)</div>
     </div>
+    
     <script>
         var prevScrollpos = window.pageYOffset;
         window.onscroll = function() {
