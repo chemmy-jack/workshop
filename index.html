@@ -10,14 +10,14 @@
 </head>
 <body>
     <div class="nav" id="navbar">
-        <a href="#home"><div class="nav-logo">CKMUN2020</div></a>
+        <div class="nav-logo" onclick="showhome()">CKMUN2020</div>
         <div class="menu" id="menuid">
             <div class="menuicon" id="menuiconid" onclick="toggleshowmenufunc()">MENU</div>
             <div class="nav-container" id="menudropdown">
-                <a href="#about"><div class="nav-item" id="nav-about" onclick="">About</div></a>
-                <a href="#committee"><div class="nav-item" id="nav-committee">Committee</div></a>
-                <a href="#registration"><div class="nav-item" id="nav-registration">Registration</div></a>
-                <a href="#sponsership"><div class="nav-item" id="nav-sponsership">Sponsership</div></a>
+                <div class="nav-item" id="nav-about" onclick="showabout()">About</div>
+                <div class="nav-item" id="nav-committee" onclick="showcommittee()">Committee</div>
+                <div class="nav-item" id="nav-registration" onclick="showregistration()">Registration</div>
+                <div class="nav-item" id="nav-sponsership" onclick="showsponsership()">Sponsership</div>
             </div>    
         </div>
     </div>
@@ -27,7 +27,7 @@
     </div>
     <div class=pages>
         <div class="betweencontent"></div>
-        <div class="content" id="home" > 
+        <div class="content current" id="home" > 
             <h1>
                 CKMUN2020
             </h1>
@@ -40,7 +40,6 @@ How was your first MUN experience? Did you tremble with excitement while address
                 </p>
                             </div>
         </div>
-        <div class="betweencontent"></div>
         <div class="content" id="about">
             <h1>ABOUT</h1>
             <div id="aboutp" class="text">
@@ -93,14 +92,12 @@ How was your first MUN experience? Did you tremble with excitement while address
                 </div>
             </div>
         </div>
-        <div class="betweencontent"></div>
         <div class="content" id="committee">
             <h1>COMMITTEE</h1>
             <div id="committee" class="text">
                 <p>include: chair intro, topic intro, (bgg?), ROP(or at ABOUT?)</p>
             </div>
         </div>
-        <div class="betweencontent"></div>
         <div class="content" id="registration">
             <h1>REGISTRATION</h1>
             <div id="registrationp" class="text">
@@ -137,7 +134,6 @@ How was your first MUN experience? Did you tremble with excitement while address
                 </p>
             </div>
         </div>
-        <div class="betweencontent"></div>
         <div class="content" id="sponsership" >
             <h1>SPONSERSHIP</h1>
             <div>
